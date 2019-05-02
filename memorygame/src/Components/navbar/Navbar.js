@@ -7,9 +7,6 @@ function NavTabs(props) {
   <span className="navbar-text">
       Your Score:{props.score}
   </span>
-  <span className="navbar-text">
-      Your High Score:{props.highscore}
-  </span>
   
 </nav>
   );

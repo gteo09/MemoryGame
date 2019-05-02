@@ -26,39 +26,65 @@ class App extends Component{
   handleShuffle =()=>{
 
     let shuffledArr = this.shufflePics(friends);
-    this.setState({friends:shuffledArr})
-  }
+    this.setState({friends:shuffledArr});
+  };
 
   handleImgClick = (event) =>{
 
-    const clicked = event.target.value;
-    
-    console.log(clicked);
+    //grab alt property of clicked image
+    const clickedFriend = event.target.alt;
 
-    this.handleShuffle();
+    //removes clicked image from available images array
+    const prevClick =
+    this.state.clickedArray.indexOf(clickedFriend) > -1;
 
-    //this.state.clickedArray.push(clickedImg);
+    //checks if clicked image has already been clicked
+    if (prevClick) {
+      //shuffles array
+      this.handleShuffle();
+      //empties clicked array and resets score
+      this.setState({
+        clickedArray: [],
+        score: 0
+      });
+        alert("You lose. Click a picture to start again!");
 
-  }
+//else add image to clickedarray and increase score by 1
+    } else {
 
+      this.handleShuffle();
 
-  //props object being sent
-  //  props{
-  //    id:friend.id,
-  //    key:friend.id,
-  //    image:friend.image,
-  //    handleImgClick: ()=>{
-  //       function that pushes to clickedArray in state obj
-  //    }
-  //  }
-
-
+      this.setState(
+        {
+          clickedArray: this.state.clickedArray.concat(
+            clickedFriend
+          ),
+          score: this.state.score + 1
+        },
+  //if score reaches 12 you win        
+        () => {
+          if (this.state.score === 12) {
+            alert("You Win!");
+            //array shuffled
+            this.handleShuffle();
+            //clicked array and score are reset
+            this.setState({
+              clickedArray: [],
+              score: 0
+            });
+          }
+        }
+      );
+    };
+  };
 
   //looping over friends to create cards
   render(){
     return(
       <div>
-      <Navbar />
+      <Navbar 
+      score={this.state.score}
+      />
        <Wrapper>
         {this.state.friends.map(friend => (
           <FriendCard
@@ -66,6 +92,7 @@ class App extends Component{
             key={friend.id}
             image={friend.image}
             handleImgClick={this.handleImgClick}
+            alt={friend.name}
           />
         ))}
       </Wrapper>
