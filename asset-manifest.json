@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/MemoryGame/static/css/main.81c63524.chunk.css",
+    "main.js": "/MemoryGame/static/js/main.08938b15.chunk.js",
+    "main.js.map": "/MemoryGame/static/js/main.08938b15.chunk.js.map",
+    "runtime~main.js": "/MemoryGame/static/js/runtime~main.d54f135b.js",
+    "runtime~main.js.map": "/MemoryGame/static/js/runtime~main.d54f135b.js.map",
+    "static/js/2.884c28c3.chunk.js": "/MemoryGame/static/js/2.884c28c3.chunk.js",
+    "static/js/2.884c28c3.chunk.js.map": "/MemoryGame/static/js/2.884c28c3.chunk.js.map",
+    "index.html": "/MemoryGame/index.html",
+    "precache-manifest.38a495093c23e27d503e5acce03c29b1.js": "/MemoryGame/precache-manifest.38a495093c23e27d503e5acce03c29b1.js",
+    "service-worker.js": "/MemoryGame/service-worker.js",
+    "static/css/main.81c63524.chunk.css.map": "/MemoryGame/static/css/main.81c63524.chunk.css.map",
+    "static/media/burger.jpg": "/MemoryGame/static/media/burger.0345c5dd.jpg",
+    "static/media/cake.jpg": "/MemoryGame/static/media/cake.953705c8.jpg",
+    "static/media/donut.jpg": "/MemoryGame/static/media/donut.ec395d34.jpg",
+    "static/media/icecream.jpg": "/MemoryGame/static/media/icecream.1f0239de.jpg",
+    "static/media/pancake.jpg": "/MemoryGame/static/media/pancake.6b8a30df.jpg",
+    "static/media/pasta.jpg": "/MemoryGame/static/media/pasta.d0b5d930.jpg",
+    "static/media/pineapple.jpg": "/MemoryGame/static/media/pineapple.c1cbae79.jpg",
+    "static/media/pizza.jpg": "/MemoryGame/static/media/pizza.b891f350.jpg",
+    "static/media/salad.jpg": "/MemoryGame/static/media/salad.3f7522d9.jpg",
+    "static/media/smoothie.jpg": "/MemoryGame/static/media/smoothie.5d8db3c5.jpg",
+    "static/media/soup.jpg": "/MemoryGame/static/media/soup.c3f18e27.jpg",
+    "static/media/sushi.jpg": "/MemoryGame/static/media/sushi.6dc743a9.jpg"
+  }
+}
